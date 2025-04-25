@@ -33,7 +33,29 @@ Dataset source: [MNIST Database]
 Clone the repository and install the required dependencies.
 
 ### Clone the repository
-
-```bash
 git clone https://github.com/Fakiha1407/Handwritten-Digit-Recognition.git
 cd Handwritten-Digit-Recognition
+Install Dependencies
+For Anaconda, 
+We can set up a virtual environment and install dependencies with:
+conda create -n tf_env python=3.8
+conda activate tf_env
+conda install tensorflow matplotlib seaborn scikit-learn
+# Usage
+After installing the required packages, you can run the training script to train the model on the MNIST dataset:
+python train_model.py
+## Model Evaluation
+After training, the model's performance is evaluated on the test set, and key metrics like accuracy, confusion matrix, and a classification report are printed.
+
+## Visualizations
+The following plots will be generated:
+Accuracy and Loss curves for both training and validation sets.
+Confusion Matrix heatmap showing model predictions vs. true labels.
+
+## Results
+Test Accuracy: ~99%
+Confusion Matrix: Shows the performance of the model in correctly identifying digits.
+Classification Report: Provides precision, recall, and F1-score for each class.
+
+## Contributing
+Feel free to fork the repository, contribute via pull requests, or open issues if you encounter bugs or have suggestions for improvement.
